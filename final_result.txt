@@ -1,0 +1,134 @@
+
+========== Report ==========
+>>> rmse : 0.5582388672695073
+>>> time_this_iter_s : 0.7109196186065674
+>>> done : False
+>>> timesteps_total : nan
+>>> episodes_total : nan
+>>> training_iteration : 96
+>>> trial_id : 02381_04806
+>>> experiment_id : 150f2dfbd838439ba3be75121740d9c4
+>>> date : 2022-11-23_18-07-08
+>>> timestamp : 1669226828
+>>> time_total_s : 70.187326669693
+>>> pid : 2505397
+>>> hostname : gpu17.doc.ic.ac.uk
+>>> node_ip : 146.169.53.229
+>>> time_since_restore : 70.187326669693
+>>> timesteps_since_restore : 0
+>>> iterations_since_restore : 96
+>>> warmup_time : 0.0038347244262695
+>>> config/acts : ['relu', 'relu']
+>>> config/batch_size : 64
+>>> config/dropout_rate : 0.11500773415805182
+>>> config/l1d : 2
+>>> config/l2d : 6
+>>> config/layer_range : [90, 100]
+>>> config/lr : 0.0010667679657819984
+>>> logdir : /homes/hc1620/ray_results/tune/train_tune_02381_04806_4806_acts=relu_relu,batch_size=64,dropout_rate=0.1150,l1d=2,l2d=6,layer_range=90_100,lr=0.0031_2022-11-23_18-05-57
+>>> rmse : 0.5602005468440698
+>>> time_this_iter_s : 0.6309833526611328
+>>> done : False
+>>> timesteps_total : nan
+>>> episodes_total : nan
+>>> training_iteration : 99
+>>> trial_id : 02381_04632
+>>> experiment_id : dacc982961114caeb7b487fcbeafb27b
+>>> date : 2022-11-23_18-04-01
+>>> timestamp : 1669226641
+>>> time_total_s : 71.37826132774353
+>>> pid : 2505690
+>>> hostname : gpu17.doc.ic.ac.uk
+>>> node_ip : 146.169.53.229
+>>> time_since_restore : 71.37826132774353
+>>> timesteps_since_restore : 0
+>>> iterations_since_restore : 99
+>>> warmup_time : 0.0036890506744384
+>>> config/acts : ['leaky', 'relu']
+>>> config/batch_size : 64
+>>> config/dropout_rate : 0.10424547151808734
+>>> config/l1d : 4
+>>> config/l2d : 1
+>>> config/layer_range : [70, 100]
+>>> config/lr : 0.004310755637402632
+>>> logdir : /homes/hc1620/ray_results/tune/train_tune_02381_04632_4632_acts=leaky_relu,batch_size=64,dropout_rate=0.1042,l1d=4,l2d=1,layer_range=70_100,lr=0.0043_2022-11-23_18-02-49
+>>> rmse : 0.5653262059966476
+>>> time_this_iter_s : 0.2872259616851806
+>>> done : True
+>>> timesteps_total : nan
+>>> episodes_total : nan
+>>> training_iteration : 100
+>>> trial_id : 02381_04896
+>>> experiment_id : ecbdf56dce2f495f9b5ae743a5538adc
+>>> date : 2022-11-23_18-08-25
+>>> timestamp : 1669226905
+>>> time_total_s : 42.21692895889282
+>>> pid : 2505499
+>>> hostname : gpu17.doc.ic.ac.uk
+>>> node_ip : 146.169.53.229
+>>> time_since_restore : 42.21692895889282
+>>> timesteps_since_restore : 0
+>>> iterations_since_restore : 100
+>>> warmup_time : 0.0039465427398681
+>>> config/acts : ['relu', 'relu']
+>>> config/batch_size : 128
+>>> config/dropout_rate : 0.12710272173911044
+>>> config/l1d : 2
+>>> config/l2d : 5
+>>> config/layer_range : [100, 100]
+>>> config/lr : 0.003567377972537045
+>>> logdir : /homes/hc1620/ray_results/tune/train_tune_02381_04896_4896_acts=relu_relu,batch_size=128,dropout_rate=0.1271,l1d=2,l2d=5,layer_range=100_100,lr=0.0036_2022-11-23_18-07-43
+
+========== Config ==========
+mixed rmse: 0.5582388672695073
+epochs: 96
+acts: ['relu', 'relu']
+batch_size: 64
+layers: [92, 106]
+lr: 0.0010667679657819984
+dropout_rate: 0.11500773415805182
+
+
+
+---train test---
+R^2 :  0.8359445738425939
+MAE :  31368.345836787015
+RMSE :  46279.46223025484
+
+Regressor error: 46279.46223025484
+
+---validation test---
+R^2 :  0.7842426210752877
+MAE :  35976.50339127083
+RMSE :  54404.08695957481
+
+Regressor error: 54404.08695957481
+
+---final test---
+R^2 :  0.7777686340369063
+MAE :  36800.322548311684
+RMSE :  55825.874038802984
+
+Regressor error: 55825.874038802984
+
+
+
+
+
+Time Taken = 5987.100045442581 s
+
+==================== Summary ====================
+config:
+{'epochs': 96, 'acts': ['relu', 'relu'], 'batch_size': 64, 'layers': [92, 106], 'lr': 0.0010667679657819984, 'dropout_rate': 0.11500773415805182}
+rmses (train, valid, test):
+46279.46223025484
+54404.08695957481
+55825.874038802984
+
+
+==================== Final Report ====================
+avg overfit_valid: 1.1755557289948058
+avg overfit_test: 1.206277500828591
+avg rmse_train: 46279.46223025484
+avg rmse_valid: 54404.08695957481
+avg rmse_test: 55825.874038802984
